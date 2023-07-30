@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5 mb-5">Simple Music Mixing App</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Audio 1</h3>
+                <div class="buttons">
+                    <button onclick="playAudio(audio1)" type="button" class="btn btn-success">Play</button>
+                    <button onclick="pauseAudio(audio1)" type="button" class="btn btn-danger">Pause</button>
+                    <button onclick="applyLowPass(audio1)" type="button" class="btn btn-warning">Low Pass
+                        Filter</button>
+                    <button onclick="applyHighPass(audio1)" type="button" class="btn btn-warning">High Pass
+                        Filter</button>
+                    <button onclick="applyReverb(audio1)" type="button" class="btn btn-warning">Reverb</button>
+                    <button onclick="applyEcho(audio1)" type="button" class="btn btn-warning">Echo</button>
+                    <button onclick="applyCompression(audio1)" type="button"
+                        class="btn btn-warning">Compression</button>
+                    <button onclick="applyDelay(audio1)" type="button" class="btn btn-warning">Delay</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3>Audio 2</h3>
+                <div class="buttons">
+                    <button onclick="playAudio(audio2)" type="button" class="btn btn-success">Play</button>
+                    <button onclick="pauseAudio(audio2)" type="button" class="btn btn-danger">Pause</button>
+                    <button onclick="applyLowPass(audio2)" type="button" class="btn btn-warning">Low Pass
+                        Filter</button>
+                    <button onclick="applyHighPass(audio2)" type="button" class="btn btn-warning">High Pass
+                        Filter</button>
+                    <button onclick="applyReverb(audio2)" type="button" class="btn btn-warning">Reverb</button>
+                    <button onclick="applyEcho(audio2)" type="button" class="btn btn-warning">Echo</button>
+                    <button onclick="applyCompression(audio2)" type="button"
+                        class="btn btn-warning">Compression</button>
+                    <button onclick="applyDelay(audio2)" type="button" class="btn btn-warning">Delay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</body>
+
+</html>
