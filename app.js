@@ -62,3 +62,14 @@ function applyDelay(audio) {
     delay.delayTime.value = 2.0;
     audio.filters = [delay];
 }
+
+function increaseVolume(audio) {
+    let volume = audio.volume();
+    if (volume < 1.0) audio.volume(volume + 0.1);
+}
+
+function decreaseVolume(audio) {
+    let volume = audio.volume();
+    if (volume > 0.0) audio.volume(volume - 0.1);
+}
+
